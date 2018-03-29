@@ -6,9 +6,12 @@ include_directories(
 )
 SET(SOURCE
     "src/TitatoGameImpl.cpp"
+    "src/TicTacToeBoard.cpp"
 )
 set(HEADERS
     "include/TitatoGame.h"
+    "include/BoardCommon.h"
     "src/TitatoGameImpl.h"
+    "src/TicTacToeBoard.h"
 )
 add_library(TitatoGameCore SHARED ${SOURCE} ${HEADERS})
